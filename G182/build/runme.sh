@@ -16,6 +16,7 @@ echo gaff = loadamberparams gaff.dat >> build.tleap
 echo loadoff MOE.off >> build.tleap
 echo loadoff EPR.off >> build.tleap
 echo G182 = sequence { MOE EPR MOE EPR MOE EPR } >> build.tleap
+echo bond G182.1.N G182.6.C >> build.tleap
 echo saveAmberParm G182 G182.prmtop G182.crd >> build.tleap
 echo quit >> build.tleap
 
