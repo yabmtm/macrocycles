@@ -1,0 +1,1 @@
+python ~/git/voelzlab/custom_topologies/scripts/Allsteps_VAV.py EPR2.mol2 EPR2 CappingAtoms.dat X G 0.0 -s N -t C
