@@ -1,0 +1,39 @@
+module load gromacs/4.5.4
+ 
+### OLD ###
+## MAke isure we're using gmx 4.6 !!!
+## Load Gromacs installation from Chris MacDermaid
+# module use -a /home/tuf10875/pkg/modulefiles/
+# module load gromacs/4.6.7-static
+
+# module load gromacs/5.1.2
+
+
+# # First, we build a chain and saved as kang1.mol2
+#tleap -f build_kang3.tleap
+
+# this makes kang3.prmtop and kang3.crd
+# TO DO:
+# EDIT the prmtop with parmed !!!!
+#sh ./build_TPP.csh
+
+#### NEXT
+# don't use amb2gmx
+#../scripts/amb2gmx.pl --prmtop kang1.prmtop --crd kang3.crd --outname kang_peptoid1 
+
+# instead, use ACPYPE!
+#/Users/vv/svn/acpype/acpype.py -p TPP.phi_rest.prm7 -x kang3.crd -b kang3
+# This makes kang3_GMX.gro and kang3_GMX.top
+
+
+# NOW we edit the grofile that was produced
+
+# We edited the mol2 by hand using Chimera to make all-cis amide bonds
+### editconf -f kang3_GMX.gro -o kang3_GMX.pdb
+### We saved as a pdb: kang3_GMX_allcis.pdb
+### and converted back to gro
+#editconf -f kang3_GMX_allcis.pdb -o kang3_GMX_allcis.gro
+
+# Run initial equilibration
+python prepare_implicit_mdsim.py yang3_GMX_allcis.gro yang3_GMX.top yang3_equilibrated
+python runme_implicit_REMD.py yang3_equilibrated.gro yang3_equilibrated.top yang3_equilibrated.ndx yang3_Nspe_only

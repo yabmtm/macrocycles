@@ -1,0 +1,131 @@
+GROMACS:    gmx editconf, VERSION 5.0.4
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx editconf, VERSION 5.0.4
+Executable:   /home/tue91994/Programs/gromacs-5.0.4-installed/bin/gmx
+Library dir:  /home/tue91994/Programs/gromacs-5.0.4-installed/share/gromacs/top
+Command line:
+  editconf -f /home/tug27224/research/macrocycles/G183/remd/npt.gro -o /home/tug27224/research/macrocycles/G183/remd/tmp/npt_pbc.gro -box 4 4 4
+
+
+Back Off! I just backed up /home/tug27224/research/macrocycles/G183/remd/tmp/npt_pbc.gro to /home/tug27224/research/macrocycles/G183/remd/tmp/#npt_pbc.gro.2#
+
+gcq#226: "God is a DJ" (Faithless)
+
+Read 7754 atoms
+Volume: 79.441 nm^3, corresponds to roughly 35700 electrons
+No velocities found
+    system size :  4.462  4.463  4.466 (nm)
+    center      :  2.171  2.165  2.145 (nm)
+    box vectors :  4.299  4.299  4.299 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  :  79.44               (nm^3)
+    shift       : -0.171 -0.165 -0.145 (nm)
+new center      :  2.000  2.000  2.000 (nm)
+new box vectors :  4.000  4.000  4.000 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  :  64.00               (nm^3)
+GROMACS:    gmx make_ndx, VERSION 5.0.4
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx make_ndx, VERSION 5.0.4
+Executable:   /home/tue91994/Programs/gromacs-5.0.4-installed/bin/gmx
+Library dir:  /home/tue91994/Programs/gromacs-5.0.4-installed/share/gromacs/top
+Command line:
+  make_ndx -f /home/tug27224/research/macrocycles/G183/remd/tmp/npt_pbc.gro -o /home/tug27224/research/macrocycles/G183/remd/tmp/output.ndx
+
+
+Reading structure file
+
+gcq#319: "What They Need's a Damn Good Whacking" (The Beatles)
+
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:     6      Other residues
+There are:  2531      Water residues
+There are:    10        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+  0 System              :  7754 atoms
+  1 Other               :   151 atoms
+  2 MOE                 :    51 atoms
+  3 EPR                 :    37 atoms
+  4 PR1                 :    33 atoms
+  5 PR2                 :    30 atoms
+  6 K                   :     5 atoms
+  7 CL                  :     5 atoms
+  8 Water               :  7593 atoms
+  9 SOL                 :  7593 atoms
+ 10 non-Water           :   161 atoms
+ 11 Ion                 :    10 atoms
+ 12 MOE                 :    51 atoms
+ 13 EPR                 :    37 atoms
+ 14 PR1                 :    33 atoms
+ 15 PR2                 :    30 atoms
+ 16 K                   :     5 atoms
+ 17 CL                  :     5 atoms
+ 18 Water_and_ions      :  7603 atoms
+
+ nr : group       !   'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom        &   'del' nr         'splitres' nr   'l': list residues
+ 't': atom type   |   'keep' nr        'splitat' nr    'h': help
+ 'r': residue         'res' nr         'chain' char
+ "name": group        'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+>>  editconf -f /home/tug27224/research/macrocycles/G183/remd/npt.gro -o /home/tug27224/research/macrocycles/G183/remd/tmp/npt_pbc.gro -box 4 4 4
+>> echo 'q
+' | make_ndx -f /home/tug27224/research/macrocycles/G183/remd/tmp/npt_pbc.gro -o /home/tug27224/research/macrocycles/G183/remd/tmp/output.ndx
+['n ', 'c3', 'c ', 'o ', 'os', 'h1', 'ca', 'ha', 'hc', 'hn', 'cx']
+Traceback (most recent call last):
+  File "prepare_implicit_mdsim.py", line 160, in <module>
+    g.build_implicit()
+  File "prepare_implicit_mdsim.py", line 113, in build_implicit
+    InsertGBSAParms(self.TopologyFile, self.newTopFile)
+  File "/home/tug27224/research/macrocycles/G183/remd/InsertGBSAParms.py", line 96, in InsertGBSAParms
+    while lines[i].count( 'moleculetype' ) == 0:
+IndexError: list index out of range
