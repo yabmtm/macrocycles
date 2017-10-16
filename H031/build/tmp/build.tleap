@@ -1,0 +1,24 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff EPR1.off
+loadoff NIB.off
+H031 = sequence { NIB EPR1 NIB EPR1 NIB EPR1 }
+bond H031.1.N H031.6.C
+saveAmberParm H031 H031.prmtop H031.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff EPR1.off
+loadoff NIB.off
+H031 = sequence { NIB EPR1 NIB EPR1 NIB EPR1 }
+bond H031.1.N H031.6.C
+saveAmberParm H031 H031.prmtop H031.crd
+quit
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff EPR1.off
+loadoff NIB.off
+H031 = sequence { NIB EPR1 NIB EPR1 NIB EPR1 }
+bond H031.1.N H031.6.C
+saveAmberParm H031 H031.prmtop H031.crd
+quit

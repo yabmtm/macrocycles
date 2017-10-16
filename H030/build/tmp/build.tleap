@@ -1,0 +1,8 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff MOE.off
+loadoff EPR1.off
+H030 = sequence { MOE EPR1 MOE EPR1 MOE EPR1 }
+bond H030.1.N H030.6.C
+saveAmberParm H030 H030.prmtop H030.crd
+quit
